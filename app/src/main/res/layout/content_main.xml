@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.btctrader.app.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC Trader"
+            android:layout_gravity="center_horizontal"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_qtd_btc"
+            android:hint="BTC: 0.00"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_valor_investido"
+            android:hint="R$ 0,00"
+            android:inputType="numberDecimal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear_saldo">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="valorização:"
+                        android:paddingTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_valorizacao"
+                        android:textSize="30sp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0%"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Saldo:"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_saldo_projetado"
+                        android:textSize="30sp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="R$ 0,00"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Lucro líquido:"
+                        android:paddingTop="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_lucro_liquido"
+                        android:textSize="30sp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="R$ 0,00"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_preco_venda"
+                android:paddingTop="15dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+            android:paddingTop="30dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="90dp"
+                android:text="comprar"
+                android:id="@+id/btn_comprar"
+                android:background="@drawable/bg_btn_comprar"
+                android:textColor="#FFF"
+                />
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"></View>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:text="vender"
+                android:background="@drawable/bg_btn_vender"
+                android:layout_weight="1"
+                android:id="@+id/btn_vender"
+                android:textColor="#FFF"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

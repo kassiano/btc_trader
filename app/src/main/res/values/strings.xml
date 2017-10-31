@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BTC Trader</string>
+    <string name="action_settings">Abrir gráficos</string>
+    <string name="title_activity_grafico">Gráfico</string>
+</resources>

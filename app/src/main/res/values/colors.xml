@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="verdinho">#21C55C</color>
+    <color name="vermelhinho">#ED4550</color>
+    <color name="laranjinha">#E46242</color>
+    <color name="laranjinha_escuro">#E46260</color>
+</resources>
